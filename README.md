@@ -1,19 +1,24 @@
 # Steam-Recommender
 # 🎮 Steam DNA & Freshness Recommender
 
-Веб-приложение на Python, которое создает персональный топ игр, анализируя твой реальный игровой опыт в Steam.
+A Python-based web application that generates a personalized top-tier game list by analyzing your actual Steam gaming experience.
 
-## ✨ Ключевые особенности
-* **Анализ игрового времени:** Алгоритм вычисляет веса тегов на основе часов, проведенных в каждой игре (фильтр от 2-х часов).
-* **Система "Свежести":** Приоритет отдается современным проектам (релизам последних 5 лет).
-* **Жесткий отбор:** В рекомендации попадают только игры с высоким доверием сообщества (20,000+ отзывов и 80%+ рейтинг).
-* **Живые цены:** Интеграция с Steam Store API для отображения актуальных цен и скидок.
+## ✨ Key Features
+* **Player DNA Analysis:** The algorithm calculates tag weights based on hours spent in each game (minimum 2-hour filter).
+* **Freshness System:** Priority is given to modern titles (releases from the last 5 years).
+* **Strict Quality Control:** Only highly trusted games make the cut (20,000+ reviews and 80%+ positive rating).
+* **Live Pricing:** Integrated with the Steam Store API to show real-time prices and current discounts.
 
-## 🛠 Технологии
+## 🛠 Tech Stack
 * **Frontend/Backend:** [Streamlit](https://streamlit.io/)
 * **Data Processing:** Pandas, JSON
-* **API:** Steam Web API (IPlayerService), Steam Store API (appdetails)
+* **APIs:** Steam Web API (IPlayerService), Steam Store API (appdetails)
 
-## 📊 Источник данных
-База игр для анализа сформирована на основе датасета:
-👉 [Steam Games Dataset (Kaggle)](https://www.kaggle.com/datasets/fronkongames/steam-games-dataset) от **fronkongames**.
+## 📊 Data Source
+The game database for analysis is built upon the following dataset:
+👉 [Steam Games Dataset (Kaggle)](https://www.kaggle.com/datasets/fronkongames/steam-games-dataset) by **fronkongames**.
+
+## 🔒 Security & Privacy
+* **No Passwords:** The app only requires your public Steam ID.
+* **API Safety:** Your Steam API Key is never shared or stored.
+* **Real-time Processing:** Data is processed in the cloud and cleared after your session.
