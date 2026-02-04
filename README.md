@@ -1,2 +1,19 @@
 # Steam-Recommender
-AI-powered Steam Recommender analyzing "Player DNA" (tags + playtime). Features advanced filtering: 20k+ reviews, high ratings, and a freshness bonus for new releases. Built with Python &amp; Streamlit using the Kaggle Steam Games Dataset. 🔒 Secure: works via public Steam ID, no passwords needed.
+# 🎮 Steam DNA & Freshness Recommender
+
+Веб-приложение на Python, которое создает персональный топ игр, анализируя твой реальный игровой опыт в Steam.
+
+## ✨ Ключевые особенности
+* **Анализ игрового времени:** Алгоритм вычисляет веса тегов на основе часов, проведенных в каждой игре (фильтр от 2-х часов).
+* **Система "Свежести":** Приоритет отдается современным проектам (релизам последних 5 лет).
+* **Жесткий отбор:** В рекомендации попадают только игры с высоким доверием сообщества (20,000+ отзывов и 80%+ рейтинг).
+* **Живые цены:** Интеграция с Steam Store API для отображения актуальных цен и скидок.
+
+## 🛠 Технологии
+* **Frontend/Backend:** [Streamlit](https://streamlit.io/)
+* **Data Processing:** Pandas, JSON
+* **API:** Steam Web API (IPlayerService), Steam Store API (appdetails)
+
+## 📊 Источник данных
+База игр для анализа сформирована на основе датасета:
+👉 [Steam Games Dataset (Kaggle)](https://www.kaggle.com/datasets/fronkongames/steam-games-dataset) от **fronkongames**.
