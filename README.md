@@ -1,6 +1,7 @@
 # Steam-Recommender
 # 🎮 Steam DNA & Freshness Recommender
-https://steam-recommender-a5jsyropkccag8utysnn7k.streamlit.app/
+
+https://steam-recommender-7.streamlit.app/
 
 A Python-based web application that generates a personalized top-tier game list by analyzing your actual Steam gaming experience.
 
